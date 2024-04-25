@@ -1,0 +1,146 @@
+body {
+    background-size: 2080px;
+    background-image: url(images/background_wall.jpg);
+    background-repeat: no-repeat;
+    
+    
+}
+.bebas-neue-regular {  font-family: "Bebas Neue", sans-serif;  font-weight: 400;  font-style: normal; }
+.header {
+    display: flex;
+    justify-content: center;
+}
+.logo_text {
+    color: rgb(0, 0, 0);
+    font-size: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: "Bebas Neue";
+    
+}
+.header_one {
+    backdrop-filter: blur(8px);
+    box-shadow: -1px 2px 18px black;
+    border-radius: 17px;
+    height: 94vh;
+    width: 160vh;
+    margin: 20px;
+}
+
+.header_link a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    
+}
+.header_link {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 40px;
+    gap: 50px;
+    font-weight: bold;
+}
+.header_top {
+display: flex;
+justify-content: space-between;
+padding-inline: 10px;
+padding-top: 15px;
+}
+.header_top-icon {
+    display: flex;
+    padding-inline: 10px;
+    gap: 20px;
+}
+.wall {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 1px 4px 5px black;
+    height: 314px;
+    width: 238px;
+    background-image: url(images/wallblock.jpg);
+}
+.wall2 {
+    height: 314px;
+    width: 238px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 1px 4px 5px black;
+    background-image: url(https://dco1c2aefa5pk.cloudfront.net/l/8cg2.jpeg);
+}
+.header_image {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 50px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+.forms {
+        height: 352px;
+        width: 480px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 17px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(8px);
+        margin-top: 22px;
+        flex-direction: column;
+        padding-bottom: 10px;
+}
+nav{
+    height: 420px;
+    display: flex;
+    justify-content: center;
+}
+.name input {
+    border-radius: 15px;
+    background: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    padding: 2px;
+    font-style: italic;
+    width: 250px;
+}
+.name button {
+    border-radius: 15px;
+    background-color:rgb(140 97 68);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    padding: 2px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    font-weight: bold;
+}
+.name button:hover {
+    background-color: blanchedalmond;
+}
+
+.name input:hover {
+    opacity: 45%;
+}
+
+.input {
+    position: relative;
+}
+.bx {
+    position: absolute;
+    right: 10px;
+    top: 7px 
+}
+
+.form-complete {
+    text-align: center;
+    padding: 201px;
+    font-size: 24px;
+}
