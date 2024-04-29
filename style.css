@@ -1,7 +1,30 @@
+:root {
+    --sizehive: 19vh
+
+}
+
+:root.dark {
+    --back: brightness(0.5);
+    --img: url(images/light.svg)
+  }
+  
+  :root.light {
+    --back: blur(1);
+    --img: url(images/dark.svg)
+
+  }
+
+
+
+
 body {
     background-size: 2080px;
+    background-position-x: 100%;
     background-image: url(images/background_wall.jpg);
     background-repeat: no-repeat;
+    backdrop-filter: var(--back);
+    overflow-x: hidden;
+    
     
     
 }
@@ -10,6 +33,110 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.animation {
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-toggle {
+    position: absolute;
+    background-image: var(--img) ;
+    left: 55px;
+    top: 30px;
+    height: 7vh;
+    width: 7vh;
+    background-repeat: no-repeat;
+    background-size: 7vh;
+    
+}
+
+.theme-toggle img {
+    height: 7vh;
+    width: 7vh;
+}
+
+img.rast {
+    position: absolute;
+    height: 12vh;
+    top: 610px;
+    filter:brightness(0.9) contrast(2);
+    animation-name: rast;
+    animation-duration: 2s;
+    animation-delay: 3.7s, 8.7s;
+    left: -14px;
+   
+    
+}
+
+@keyframes rast {
+    0% {
+        width: 170px;
+     
+    }
+    50% {
+        
+        width: 180px;
+    }
+    100% {
+        width: 170px;
+    }
+   
+    }
+
+
+    img.kir{
+    position: absolute;
+    height: 15vh;
+    left: 20px;
+    animation-name: kirpich;
+    top: 100px;
+    animation-duration: 10s;
+    filter:brightness(0.6) contrast(2);
+    animation-iteration-count: infinite;
+    
+    
+    
+    
+}
+
+@keyframes kirpich {
+    0% {
+        margin-top: 0px;
+       
+    }
+    50% {
+        margin-top: 500px;
+        
+    }
+    100% {
+        margin-top: 0px;
+        
+    }
+    
+}
+.rast1 {
+    position: absolute;
+    height: 12vh;
+    top: 610px;
+    filter:brightness(0.9) contrast(2);
+    animation-name: rast;
+    animation-duration: 2s;
+    animation-delay: 3.7s, 8.7s;
+    right: -14px;
+}
+
+.kir1 {
+    position: absolute;
+    height: 15vh;
+    right: 20px;
+    top: 100px;
+    animation-name: kirpich;
+    animation-duration: 10s;
+    filter:brightness(0.6) contrast(2);
+    animation-iteration-count: infinite;
+}
+
 .logo_text {
     color: rgb(0, 0, 0);
     font-size: 6vh;
@@ -93,8 +220,8 @@ padding-top: 15px;
         margin-top: 22px;
         flex-direction: column;
         padding-bottom: 10px;
-}
-nav{
+    }
+    nav{
     height: 420px;
     display: flex;
     justify-content: center;
@@ -143,4 +270,51 @@ nav{
     text-align: center;
     padding: 201px;
     font-size: 24px;
+}
+    
+.hive {
+    height: var(--sizehive);
+    width: var(--sizehive);
+    background-image: url(images/photo_2024-04-29_14-25-12.jpg);
+    background-position: center;
+    background-size: contain;
+    border-radius: 15px;
+    margin-top: -35px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-image: url(images/keramogranit_11_013_5_design_lux_90_grey_45x90_azteca_970.png);
+    height: 250px;
+}
+
+.anim-work:hover {
+    animation-name: work;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes work {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.wall:hover {
+    transform: scale(1.1);
+}
+.wall2:hover {
+    transform: scale(1.1);
+}
+.menk:hover {
+transform: scale(1.1);
+}
+footer a:hover {
+    transform: scale(1.1);
 }

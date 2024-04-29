@@ -9,15 +9,22 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div class="animation">
+        <img class="rast" src="images/rast.png" alt="">
+        <img class="kir" src="images/kirpich.png" alt="">
+        <img class="rast1" src="images/rast.png" alt="">
+        <img class="kir1" src="images/kirpich.png" alt="">
+        <button class="theme-toggle"><img src="images/dark.svg" alt=""></button>
+    </div>
     <header>
         <section class="header">
             <div class="header_one">
             <div class="header_top">
                 <div class="header_top-icon">
                     
-                    <a href="https://hivebootcamp.ru/home"><img src="images/menu.svg" alt=""></a>
+                    <a href="https://hivebootcamp.ru/home"><img class="menk" src="images/menu.svg" alt=""></a>
                     <a href="indexs.html"><img src="images/time.svg" alt=""></a>
-                    <a href=""><img src="images/work.svg" alt=""></a>
+                    <a href=""><img class="anim-work" src="images/work.svg" alt=""></a>
 
                 </div>
                 <div class="pt-10">
@@ -52,7 +59,7 @@
                     Введите имя
                 </label>
                 <div class="input">
-                    <input type="text" id="name" placeholder="Ислам">
+                    <input type="text" id="name" placeholder="Ислам" required>
                     <i class='bx bx-user'></i>
                 </div>
 
@@ -68,7 +75,22 @@
             </div>
         </form></div>
     </nav>
-    
+
+    <footer class="flex-col content-center">
+        <div class="text-center">
+            <p class="text-3xl pt-5 font-bold">Не хочешь работать на стройке?</p>
+            <p class="text-2xl font-semibold">Жми внизу</p>
+        </div>
+        <div class="flex justify-evenly">
+            <div class="hive"></div>
+            <a href="https://hivebootcamp.ru/home" class="text-6xl flex items-center font-black">HIVE.BOOTCAMP</a>
+            <div class="hive"></div>
+        </div>
+    </footer>
+
+
+
+    <script src="main.js"></script>
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
 </html>
