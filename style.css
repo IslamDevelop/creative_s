@@ -19,6 +19,7 @@
 
 body {
     background-size: 2080px;
+    width: 100%;
     background-position-x: 100%;
     background-image: url(images/background_wall.jpg);
     background-repeat: no-repeat;
@@ -123,13 +124,13 @@ img.rast {
     animation-name: rast;
     animation-duration: 2s;
     animation-delay: 3.7s, 8.7s;
-    right: -14px;
+    right: -20px;
 }
 
 .kir1 {
     position: absolute;
     height: 15vh;
-    right: 20px;
+    right: 23px;
     top: 100px;
     animation-name: kirpich;
     animation-duration: 10s;
@@ -152,8 +153,9 @@ img.rast {
     box-shadow: -1px 2px 18px black;
     border-radius: 17px;
     height: 94vh;
-    width: 160vh;
-    margin: 20px;
+    width: 155vh;
+    margin-block: 20px;
+    margin-inline: 20vh;
 }
 
 .header_link a {
